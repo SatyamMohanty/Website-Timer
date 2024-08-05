@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Website Timer",
+  "version": "1.0",
+  "description": "Shows time spent on each website.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/logic.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon16.png",
+    "128": "icon16.png"
+  }
+}
